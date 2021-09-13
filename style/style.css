@@ -1,0 +1,241 @@
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box
+                }
+                
+                html {
+                    font-size: 62.5%;
+                }
+                
+                body {
+                    background-color: hsl(233, 47%, 7%);
+                    font-family: 'Inter', sans-serif;
+                }
+                
+                .template {
+                    height: 100vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                .card {
+                    background: hsl(244, 38%, 16%);
+                    display: flex;
+                    align-items: stretch;
+                    justify-content: center;
+                    border-radius: 1.0rem;
+                    max-width: 1140px;
+                    margin: 5%;
+                }
+                
+                .text-area {
+                    height: auto;
+                    padding: 6%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                
+                .text-title {
+                    color: white;
+                    font-size: 3.4rem;
+                    margin-bottom: 2.8rem;
+                    line-height: 4.2rem;
+                    letter-spacing: 0.6;
+                }
+                
+                span {
+                    color: hsl(277, 64%, 61%);
+                }
+                
+                .views {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 10px;
+                }
+                
+                .text-block {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                }
+                
+                .text-detial {
+                    color: hsla(0, 0%, 100%, 0.75);
+                    font-size: 1.4rem;
+                    line-height: 2.4rem;
+                    letter-spacing: 0.7px;
+                }
+                
+                .text-block {
+                    display: flex;
+                    justify-content: flex-start;
+                }
+                
+                .text-view {
+                    color: white;
+                    font-size: 2rem;
+                    line-height: 3.5rem;
+                    font-weight: bold;
+                }
+                
+                .text-main-view {
+                    color: hsla(0, 0%, 100%, 0.75);
+                    letter-spacing: 0.1rem;
+                    font-size: 1.2rem;
+                    font-family: 'Lexend Deca', sans-
+                }
+                
+                .card-pic {
+                    background-color: hsl(277, 64%, 61%);
+                    border-radius: 0 1rem 1rem 0;
+                    position: relative;
+                }
+                
+                .img-mob {
+                    display: none;
+                }
+                
+                .img-desk {
+                    mix-blend-mode: multiply;
+                    height: 100%;
+                }
+                
+                @media screen and (max-width: 1440px) {
+                    .text-main-view {
+                        font-size: 1.1rem;
+                    }
+                    .text-block {
+                        width: 100%;
+                    }
+                    .text-title {
+                        font-size: 3.2rem;
+                        line-height: 3.8rem;
+                        margin-bottom: 2.0rem;
+                    }
+                    .text-detial {
+                        width: 100%;
+                        font-size: 1.6rem;
+                        line-height: 2.4rem;
+                        letter-spacing: 0.5px;
+                    }
+                }
+                
+                @media screen and (max-width: 980px) {
+                    .template {
+                        height: 100%;
+                        min-height: 100vh;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .card {
+                        display: flex;
+                        flex-direction: column;
+                        max-width: 78%;
+                        margin: 3% 0;
+                    }
+                    .views {
+                        flex-wrap: wrap;
+                        align-items: center;
+                        text-align: center;
+                    }
+                    .text-block {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 1.6rem;
+                    }
+                    .text-area {
+                        order: 2;
+                        padding: 10%;
+                    }
+                    .text-title {
+                        text-align: center;
+                    }
+                    p {
+                        font-size: 3.4rem;
+                        margin-bottom: 3.0rem;
+                        line-height: 4.2rem;
+                        letter-spacing: 0.6px;
+                    }
+                    .text-detial {
+                        width: 100%;
+                        text-align: center;
+                    }
+                    .views {
+                        margin-top: 2.8rem;
+                    }
+                    .text-main-view {
+                        font-size: 1.2rem;
+                    }
+                    .card-pic {
+                        border-radius: 1rem 1rem 0 0;
+                        order: 1;
+                        background-color: hsl(277, 64%, 61%);
+                    }
+                    .img-desk {
+                        display: none;
+                    }
+                    .img-mob {
+                        display: block;
+                        width: 100%;
+                        mix-blend-mode: multiply;
+                    }
+                }
+                
+                @media screen and (max-width: 375px) {
+                    .template {
+                        height: 100vh;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .card {
+                        display: flex;
+                    }
+                    .text-area {
+                        order: 2;
+                        padding: 10%;
+                    }
+                    .text-title {
+                        width: 100%;
+                    }
+                    p {
+                        font-size: 2.6rem;
+                        text-align: center;
+                        line-height: 3.6rem;
+                        margin-bottom: 1.2rem;
+                    }
+                    .text-detial {
+                        text-align: center;
+                        width: 100%;
+                    }
+                    .views {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 2.8rem;
+                    }
+                    .text-block {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 1.6rem;
+                    }
+                    .text-main-view {
+                        font-size: 1.2rem;
+                    }
+                    .card-pic {
+                        border-radius: 1rem 1rem 0 0;
+                        order: 1;
+                    }
+                    .img-desk {
+                        display: none;
+                    }
+                    .img-mob {
+                        display: block;
+                        width: 100%;
+                    }
+                }
